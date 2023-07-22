@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de inscripción">
+    <meta name="author" content="Alfredo Albornoz">
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="Imagenes/Logo-UntrefSchool.jpg">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <h1>Formulario de Inscripción</h1>  
+  <div class="contenedor">  
+    <form  action="https://formsubmit.co/adriandeloma23@gmail.com" method="post" name="form-inscripcion" enctype="multipart/form-data">  
+      <div class="nombre">
+        <p><label for="nombre">Nombre:</label></p>
+        <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre" required>
+      </div>
+      <div class="apellido">
+        <p><label for="apellido">Apellido:</label></p>
+        <input id="apellido" type="text" name="apellido" placeholder="Escriba su apellido" required>
+      </div>
+      <div class="tipo">
+        <p><label for="tipo">Tipo de Doc.:</label></p>
+        <input id="tipo" type="text"  name="documento"required>
+      </div>
+      <div class="numero">
+        <p><label for="numero">Nº:</label></p>
+        <input id="numero" type="text" name="numero" placeholder="Solo números" required>
+      </div>  
+      <div class="domicilio">
+        <p><label for="domicilio">Domicilio:</label></p>
+        <input id="domicilio" type="text" name="domicilio" required>
+      </div>
+      <div class="Nº">
+        <p><label for="Nº">Nº:</label></p>
+        <input id="Nº" type="text" name="Nº">
+      </div>
+      <div class="telefono">
+        <p><label for="telefono">Telefono:</label></p>
+        <input id="telefono" type="text" name="telefono" placeholder="Solo números" required>
+      </div>
+      <div class="textarea">
+        <p><label for="textarea">Para dudas o consultas, escribir aquí abajo:</label></p>
+        <textarea  id="textarea" rows="10" name="mensaje"></textarea><br><br>
+      </div>  
+      <div class="button">
+        <button type="submit">Enviar</button>
+      </div>  
+    </form>
+  </div>   
+</body> 
+</html>
