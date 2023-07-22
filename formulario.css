@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@700&family=Poppins:wght@200;400&display=swap');
+
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+body{
+ font-family: 'Poppins', sans-serif;
+ background-color: #00425A;
+ color: #EFF5F5;
+}
+
+h1{
+font-family: 'Belanosima', sans-serif;
+font-size: 2rem;
+text-align: center;
+margin-bottom: 5px;
+color: #EFF5F5;
+}
+
+.contenedor{
+width: 50%;
+padding: 10px;
+border: 2px solid  #FC7300;
+margin-left: auto;
+margin-right: auto;
+}
+
+input{
+width: 100%;
+height: 30px;
+border-radius: 10px;
+border: solid 2px #181823;
+}
+
+textarea{
+width: 100%;
+border: solid 1px #181823;
+}
+
+button{
+  color: #EFF5F5;
+  background-color:#1F8A70;
+  padding: 5px;
+  border: 2px solid #181823;
+  border-radius: 5px;
+}
+
+button{
+  cursor: grab;
+}
+
+@media screen and (max-width:768px), (max-width:320px){
+  .nombre{
+   grid-area: nombre;
+  }
+  .apellido{
+   grid-area: apellido;
+  }
+  .tipo{
+   grid-area: tipo;
+  }
+  .numero{
+   grid-area: numero;
+  }
+  .domicilio{
+   grid-area:domicilio ;
+  }
+  .Nº{
+   grid-area: nº;
+  }
+  .telefono{
+   grid-area: telefono;
+  }
+  .textarea{
+   grid-area: textarea;
+  }
+  .button{
+   grid-area: button;
+  }
+
+  .contenedor{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(9, 1fr);
+   grid-template-areas: 
+   'nombre' 'apellido' 'tipo' 'numero' 'domicilio' 'nº' 'telefono' 'textarea' 'button'
+   ;
+   gap: 5px;
+   width: 100%;
+ }
+}
