@@ -29,7 +29,7 @@ header{
   display: flex;
   flex-flow: row wrap;
   justify-content:space-between;
-  background-color: #EFF5F5;/*sticky no funciona si su contenedor no tiene contenido, o sea se va*/
+  background-color: #EFF5F5;
   height:100%;
 }
 
@@ -41,7 +41,7 @@ header{
 }
 
 .menu a:hover {
-  color: #FC7300;/*-Paleta de colores: #FC7300 , #1F8A70 , #00425A , #181823, #EFF5F5*/
+  color: #FC7300;
 }
 
 .portada{
@@ -159,3 +159,110 @@ footer{
   color:#EFF5F5;
   padding: 25px;
 }
+
+@media screen and (max-width:768px){
+
+  header{
+    position: relative;
+    height: 220px;
+  } 
+  
+  .menu{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #EFF5F5;
+    margin-bottom: auto;
+  }
+  
+  h1{
+    font-size: 3rem;
+  }
+  
+  h2{
+    font-size: 2rem;
+  }
+  
+  h3{
+    font-size: 1.5rem;
+  }
+  
+  .somos, .elegirnos, .propuesta, .articulos{
+    display: flex;
+    flex-flow: column wrap;
+    gap:2px;
+    padding: 5px;
+  }
+  .somos__items, .elegirnos__items, .articulo__items, .menu__items{
+    width:100%;
+  }
+  .propuesta__items{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  iframe{
+    width: 200px;
+    height: 50%;
+  }
+  
+  footer{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    background-color: #00425A;
+  }
+  }
+  @media screen and (max-width:320px) {
+  
+  header{
+    position: relative;
+    height: 220px;
+  } 
+  
+  body{
+    font-size: 0.7rem;
+  }
+   
+  .menu{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #EFF5F5;
+    margin-bottom: auto;
+  }
+  
+  h1{
+    font-size: 2rem;
+  }
+  
+  h2{
+    font-size: 1.7rem;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+  
+  .somos, .elegirnos, .propuesta, .articulos{
+    display: flex;
+    flex-flow: column wrap;
+    gap:2px;
+    padding: 5px;
+  }
+  .somos__items, .elegirnos__items, .articulo__items, .menu__items{
+    width:100%;
+  }
+  .propuesta__items{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  iframe{
+    width: 200px;
+  }
+  
+  footer{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    background-color: #00425A;
+  }
+  }
