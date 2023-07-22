@@ -1,18 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Escuela primaria">
-    <meta name="author" content="Alfredo Albornoz">
-    <title>UntrefSchool</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="Imagenes/Logo-UntrefSchool.jpg">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Escuela primaria">
+  <meta name="author" content="Alfredo Albornoz">
+  <title>UntrefSchool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="logo-UntrefSchool.jpg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <header>
+      <nav class="menu">
+        <a class="menu__items" href="#somos">Quienes somos</a>
+        <a class="menu__items" href="#elegirnos">Por qué elegirnos</a>
+        <a class="menu__items" href="#propuesta">Propuesta educativa</a>
+        <a class="menu__items" href="#noticias">Últimas noticias</a>
+        <a class="menu__items" href="#contactos">Contactos</a>
+        <a class="menu__items" href="formulario.html" target="_blank">Formulario</a>
+      </nav>
+  </header>  
+  <div class="portada"> 
+  <picture> 
+      <source class="portada__imagen" srcset="nivel-inicial.jpg" media="(max-width:320px)" >
+      <source class="portada__imagen" srcset="nivel-primario.jpg" media="(max-width:768px)">
+      <img    class="portada__imagen" src="escuela-entrada.jpg"  alt="foto">
+  </picture>  
+  <div class="logo">  
+      <h1 class="logo__titulo">UntrefSchool</h1> 
+  </div>
+  </div> 
+  <hr><br>
+  <main>
+    <section id="somos">
+      <h2>Quienes somos</h2>
+      <div class="somos">
+        <div class="somos__items">
+          <img  class="somos__imagen" src="autoridades.jpeg" alt="autoridades">
+        </div> 
+        <div class="somos__items">
+          <p class="somos__texto">Nuestra escuela cuenta con un Consejo Directivo conformado por profesionales y docentes de amplia trayectoria que, animado por la Directora General, conduce la obra mediante procesos de diálogo y garantiza la marcha de la institución, la convivencia y el cumplimiento de los objetivos pedagógicos de cada nivel.</p>
+        </div>
+      </div>  
+    </section>
+    <hr><br>
+    <section  id="elegirnos">
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="elegirnos">
+        <div class="elegirnos__items">
+          <p class=" elegirnos__texto">Nuestro proyecto contempla diversos programas educativos que brindan las herramientas necesarias para que los y las estudiantes logren un crecimiento integral y puedan formar parte de una comunidad en permanente cambio con un espíritu libre, creativo y transformador.
+          La propuesta pedagógica que fundamenta nuestros programas pone a cada estudiante en el centro de los procesos de enseñanza y aprendizaje, otorgándoles un rol activo en la apropiación del conocimiento. A su vez, buscamos que las relaciones dentro del aula y el reconocimiento de la alteridad sean claves en los procesos de socialización y construcción identitaria.
+          Consideramos que el diálogo, el respeto mutuo y el pensamiento crítico son pilares en el desarrollo de una sociedad democrática más justa, inclusiva y fraterna.</p>
+        </div>
+        <div class="elegirnos__items">
+          <img class="elegirnos__imagen" src="profesores.jpg" alt="profesores">
+        </div>
+      </div>
+    </section>
+    <hr><br>
+    <section id="propuesta">
+      <h2>Propuesta Educativa</h2>
+      <div class="propuesta">
+        <div class="propuesta__items">
+          <img class="propuesta__img" src="educación-fisica.JPG" alt="educacion-fisica">
+          <p class="propuesta__texto"><strong>Atletismo</strong></p>
+        </div>
+        <div class="propuesta__items">
+          <img class="propuesta__img" src="escuela_de_verano.webp" alt="escuela_de_verano">
+          <p class="propuesta__texto"><strong>Escuela de verano</strong></p>
+        </div>
+        <div class="propuesta__items">
+          <img class="propuesta__img" src="tecnología.JPG" alt="tecnología">
+          <p class="propuesta__texto"><strong>Tecnología</strong></p>
+        </div>
+        <div class="propuesta__items">
+          <img class="propuesta__img" src="natacion.jpeg" alt="natación">
+          <p class="propuesta__texto"><strong>Natación</strong></p>
+        </div>
+      </div>  
+    </section>
+    <hr><br>
+    <section id="noticias">
+      <h2>Últimas noticias</h2>
+      <div class="articulos">
+        <div class="articulo__items">
+            <h3 class="articulo__titulo">Nuevo patio de juegos</h3>
+            <p class="articulo__texto">El diseño y construcción del espacio fue realizado por la reconocida empresa Crucijuegos bajo la temática “selva”. La atracción principal del sector es un gran barco pirata con diferentes niveles y toboganes. Además, el espacio también cuenta con un mangrullo, varios minirotadores, troncos de equilibrio, bancos de rotomoldeo y tomas de escalar.
+            Los motivos del piso mezclan césped sintético y una capa de caucho continuo realizado por la empresa "Bongo" a base de neumáticos reciclados que brinda protección contra impactos específicamente diseñada para parques infantiles.
+            ¡Esperamos que todos los niños y niñas del nivel disfruten de este nuevo espacio pensado exclusivamente para la comunidad!</p>
+        </div>
+        <div class="articulo__items">
+          <h3 class="articulo__titulo">Espacio Maker</h3>
+          <p class="articulo__texto">Si todavía no lo conociste, el Espacio Maker es un lugar donde nuestros estudiantes tienen la libertad de diseñar, crear y modificar un producto propio. Las producciones creadas en este espacio son muy variadas ya que pueden ser físicas (de cartón, plástico, papel, etc), digitales (audios, videos, imágenes) o combinadas.
+          El diseño del espacio es flexible y permite trabajar tanto en equipo como en forma individual, ya sea sentados, de pie, anotando en paredes, circulando por el lugar, etc. También cuenta con herramientas que permiten ampliar las posibilidades creativas como impresoras 3D, pantallas interactivas, pizarras y mucho más.
+          Estas características lo hacen un espacio atractivo para llevar adelante proyectos interdisciplinarios donde se trabaja en colaboración, realizando diferentes actividades y producciones en una sucesión de etapas planificadas que son guiadas por el equipo de Innovación y Tecnología Educativa del colegio.
+          Todos los niveles ya incorporan al Espacio Maker dentro de sus propuestas pedagógicas en la búsqueda de ideas originales siempre bajo la premisa de que nadie aprende solo y aprendemos para transformar.</p>
+        </div>
+      </div>  
+    </section>
+  </main>
 </body>
 </html>
